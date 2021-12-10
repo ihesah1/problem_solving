@@ -7,8 +7,12 @@ Write a function named longestString that takes in an array of strings and retur
 ------------------------------------------------------------------------------------------------ */
 
 const longestString = (arr) => {
-  // Solution code here...
-};
+    let max = arr[0].length;
+    arr.map(v => max = Math.max(max, v.length));
+    result = arr.filter(v => v.length == max);
+    return result;
+  }
+  console.log(longestString(['hesah', 'raghad', 'nora','mead','sahar']))
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
